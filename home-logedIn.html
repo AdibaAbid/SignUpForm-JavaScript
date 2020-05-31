@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="signup-form.css">
+
+    <style>
+        .error-block {
+            margin-left: -170px;
+        }
+        
+        form,
+        input[type=submit] {
+            text-align: center;
+            margin: 0;
+            margin-top: 90px;
+        }
+        
+        .input-with-float label {
+            left: 63px;
+        }
+        
+        #login-result {
+            color: black;
+            opacity: 0;
+        }
+        
+        span {
+            text-transform: capitalize;
+        }
+        
+        .bk-image {
+            background-position: 0px -380px;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <section class="cart">
+            <section class="bk-image">
+                <div class="image">
+                    <h1>Welcome <span id="message-name">bla</span> to our community</h1>
+                    <p>Please feel free to learn new skills and congratulations to <br>be part of our great community.</p>
+                    <a href="index.html">Do you want a create another Account? 
+                        <br>
+                        <button>SIGN UP</button>
+                </a>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <script>
+        var message = document.getElementById("message-name")
+        var name = localStorage.getItem("userNameKey")
+        message.innerHTML = name
+    </script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>

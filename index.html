@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="signup-form.css">
+</head>
+
+<body>
+    <main>
+
+        <section class="cart">
+            <section class="bk-image">
+                <div class="image">
+                    <h1>Sign Up</h1>
+                    <p>Please Enter your details to sign up and <br>be part of our great community.</p>
+                    <a href="login.html">Already have an account?
+                <br>
+                        <button>LOGIN</button>
+                </a>
+                </div>
+            </section>
+            <section class="signUp">
+                <form action="login.html">
+                    <div class="input-with-float">
+                        <input type="text" id="user-name" name="nameUser" autocomplete="off" required>
+                        <label for="nameUser">Username</label>
+                        <br>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+                    <div class="input-with-float">
+                        <input type="text" id=user-email name="emailUSer" autocomplete="off" required>
+                        <label for="emailUSer">Email</label>
+                        <br>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+                    <div class="input-with-float">
+                        <input type="password" id="user-Password" name="passwordUser" required>
+                        <label for="passwordUser">Password</label>
+                        <br>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+                    <div class="input-with-float">
+                        <input type="password" name="confirmPassword" id="confirm-Password" required>
+                        <label for="confirmPassword">Confirm Pssword</label>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+                    <div class="input-with-float-gender">
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="female" class="female">Female</label>
+                        <br>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+                    <input type="submit" value="SIGN UP" onclick="validation()" id="button">
+                </form>
+            </section>
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

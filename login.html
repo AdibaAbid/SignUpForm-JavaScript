@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="signup-form.css">
+
+    <style>
+        .heading {
+            text-align: center;
+            margin-top: 32px;
+            padding: 0;
+            color: transparent;
+            background-image: linear-gradient(to right top, #d16ba5, #d767ac, #dc63b3, #e15ebb, #e55ac3, #d171dd, #b785f1, #9b96ff, #53b7ff, #00d3ff, #00e9ff, #5ffbf1);
+            background-clip: text;
+            -webkit-background-clip: text;
+            /* -webkit-text-fill-color= transparent; */
+        }
+        
+        .error-block {
+            margin-left: -170px;
+        }
+        
+        form,
+        input[type=submit] {
+            text-align: center;
+            margin: 0;
+            margin-top: 70px;
+        }
+        
+        .input-with-float label {
+            left: 63px;
+        }
+        
+        #login-result {
+            color: black;
+            opacity: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <section class="cart">
+            <section class="bk-image">
+                <div class="image">
+                    <h1>Welcome to our community</h1>
+                    <p>Please Enter your details to Login and <br>be part of our great community.</p>
+                    <a href="index.html">Do you have an Account? <br> Create an Account?
+                <br>
+                        <button>SIGN UP</button>
+                </a>
+                </div>
+            </section>
+            <section class="signUp">
+                <form action="home-logedIn.html">
+                    <h1 class="heading">Login Account</h1>
+                    <div class="input-with-float">
+                        <input type="text" id="user-name" name="nameUser" autocomplete="off" required>
+                        <label for="nameUser">Username</label>
+                        <br>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+
+                    <div class="input-with-float">
+                        <input type="password" id="user-Password" name="passwordUser" required>
+                        <label for="passwordUser">Password</label>
+                        <br>
+                        <div class="error-block">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <p class="message">hello</p>
+                        </div>
+                    </div>
+
+                    <h2 id=login-result>helo</h2>
+
+                    <input type="submit" value="LogIn" onclick="login()">
+                </form>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
